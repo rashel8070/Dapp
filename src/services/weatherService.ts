@@ -76,3 +76,5 @@ export const generateLondonWeatherDailyData = (): WeatherDailyData => {
   // Return weather data
   return generatedWeatherDailyData;
 };
+
+
