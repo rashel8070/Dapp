@@ -20,5 +20,5 @@ interface CarsData{
   fuelType: string;      // The type of fuel the car uses (e.g., gasoline, diesel, electric)
   mileage: number;       // The mileage of the car
   price: number;         // The price of the car
-  dateAdded: Date;       // The date when the car was added to the inventory
+  dateAdded: number;       // The date when the car was added to the inventory
 }
