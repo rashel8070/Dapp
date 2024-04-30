@@ -1,4 +1,5 @@
 import { faker } from "@faker-js/faker";
+import { storeFootballData } from "../helpers/helpers.js";
 export const generatebrazildata = () => {
     const generatefootballdata = {
         country: 'brazil',
@@ -6,6 +7,7 @@ export const generatebrazildata = () => {
         runnerup: faker.number.int({ min: 1000, max: 100000 }),
         ranking: faker.number.int({ min: 1000, max: 100000 }),
     };
+    storeFootballData(generatefootballdata).catch(console.error);
     return generatefootballdata;
 };
 export const generateenglanddata = () => {
@@ -15,6 +17,7 @@ export const generateenglanddata = () => {
         runnerup: faker.number.int({ min: 1000, max: 100000 }),
         ranking: faker.number.int({ min: 1000, max: 100000 }),
     };
+    storeFootballData(generatefootballdata).catch(console.error);
     return generatefootballdata;
 };
 export const generategermanydata = () => {
@@ -24,6 +27,7 @@ export const generategermanydata = () => {
         runnerup: faker.number.int({ min: 1000, max: 100000 }),
         ranking: faker.number.int({ min: 1000, max: 100000 }),
     };
+    storeFootballData(generatefootballdata).catch(console.error);
     return generatefootballdata;
 };
 //# sourceMappingURL=footballservices.js.map

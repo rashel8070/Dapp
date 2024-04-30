@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import { storeWeatherData } from "../helpers/helpers.js";
+//import { storeWeatherData } from "../helpers/helpers.js"
 export const generateLondonWeatherData = () => {
     // Generate random weather data
     const generatedWeatherData = {
@@ -9,7 +9,7 @@ export const generateLondonWeatherData = () => {
         wind: faker.number.int({ min: 2, max: 78 }),
         rain: faker.number.int({ min: 65, max: 75 }),
     };
-    storeWeatherData(generatedWeatherData).catch(console.error);
+    //storeWeatherData(generatedWeatherData).catch(console.error);
     // Return weather data
     return generatedWeatherData;
 };
@@ -22,7 +22,7 @@ export const generateDublinWeatherData = () => {
         wind: faker.number.int({ min: 2, max: 78 }),
         rain: faker.number.int({ min: 65, max: 75 }),
     };
-    storeWeatherData(generatedWeatherData).catch(console.error);
+    //storeWeatherData(generatedWeatherData).catch(console.error);
     // Return weather data
     return generatedWeatherData;
 };
@@ -35,7 +35,7 @@ export const generateNigeriaWeatherData = () => {
         wind: faker.number.int({ min: 10, max: 78 }),
         rain: faker.number.int({ min: 65, max: 75 }),
     };
-    storeWeatherData(generatedWeatherData).catch(console.error);
+    //storeWeatherData(generatedWeatherData).catch(console.error);
     //Return weather data
     return generatedWeatherData;
 };
@@ -48,7 +48,7 @@ export const generateFranceWeatherData = () => {
         wind: faker.number.int({ min: 10, max: 78 }),
         rain: faker.number.int({ min: 65, max: 75 }),
     };
-    storeWeatherData(generatedWeatherData).catch(console.error);
+    // storeWeatherData(generatedWeatherData).catch(console.error);
     //Return weather data
     return generatedWeatherData;
 };

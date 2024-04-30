@@ -1,6 +1,6 @@
 import algosdk from "algosdk";
 import { getClient, getAccount } from "../config/config.js";
-export const storeWeatherData = async (data) => {
+export const storeFootballData = async (data) => {
     try {
         const client = getClient();
         const account = getAccount();
@@ -18,7 +18,7 @@ export const storeWeatherData = async (data) => {
         console.log("Transaction ID:", sendTxn.txId);
     }
     catch (error) {
-        console.error("Failed to store weather data:", error);
+        console.error("Failed to store football data:", error);
     }
 };
 //# sourceMappingURL=helpers.js.map

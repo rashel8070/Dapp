@@ -1,7 +1,7 @@
 import algosdk from "algosdk";
 import { getClient, getAccount } from "../config/config.js";
 
-export const storeWeatherData = async (data: WeatherData): Promise<void> => {
+export const storeFootballData = async (data: FootBallData): Promise<void> => {
   try {
     const client = getClient();
     const account = getAccount();
@@ -22,7 +22,7 @@ export const storeWeatherData = async (data: WeatherData): Promise<void> => {
     
     console.log("Transaction ID:", sendTxn.txId);
 } catch (error) {
-    console.error("Failed to store weather data:", error);
+    console.error("Failed to store football data:", error);
   }
   
 };
